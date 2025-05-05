@@ -1,0 +1,140 @@
+body{
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  min-height: 85vh;
+  display: flex;
+  background: whitesmoke;
+  width:100%;
+}
+.calcul{
+  width:45%;
+  height: auto;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 12px 12px 20px  #E4E4E4,
+            -12px -12px 20px #ffffff;
+}
+.enter #ecran{
+  height: 95px;
+  width:95%;
+  text-align: right;
+  border:none;
+  outline: none;
+  margin-left: 10px;
+  border-radius: px;
+  margin-top: 15px;
+  font-size: 40px;
+  box-shadow: inset 5px 5px 8px #3a413a,
+            inset -5px -5px 8px #a6a6a6;
+}
+.table{
+  flex-direction: column;
+  margin-top: 35px;
+  justify-content: center;
+  align-items: center
+}
+.cal{
+  height: 60px;
+  width:90px;
+  margin:6px;
+  margin-left: 10px;
+  border: none;
+ box-shadow: inset 5px 5px 8px #a6a6a6,
+            inset -5px -5px 8px #3a413a; 
+  trasition:1s;
+  font-size: 30px;
+}
+#evalu{
+  border: none;
+  background-color:  #E44521;
+  box-shadow: inset 4px 4px 8px #E98585,
+            inset -4px -4px 8px #861900;
+  font-size: 30px;
+  transition: 1s;
+  height:60px;
+  width:45.3%;
+  margin-left:10px;
+}
+.cal:hover{
+  box-shadow: inset 3px 3px 6px #A8A8A8,
+            inset -3px -3px 6px #D8D8D8;
+}
+#evalu:hover{
+  background-color: #E44520;
+  
+  box-shadow: inset 3px 3px 6px #A8A8A8,
+            inset -3px -3px 6px #D8D8D8
+}
+#ce{
+  height: 60px;
+  width:90px;
+  margin:6px;
+  margin-left: 10px;
+  border: none;
+   background-color:  #14EAFF;
+  box-shadow: inset 4px 4px 8px #87E5EE,
+            inset -4px -4px 8px  #0C7782;
+  font-size: 30px;
+  transition: 1s;
+}
+
+#ce:hover{
+  background-color: #14eafe;
+  box-shadow: inset 3px 3px 6px #A8A8A8,
+            inset -3px -3px 6px #D8D8D8
+}
+#ac{
+  height: 60px;
+  width:90px;
+  margin:6px;
+  margin-left: 10px;
+  border: none;
+   background-color:  #ED2DE4;
+  box-shadow: inset 4px 4px 8px #f288ed,
+            inset -4px -4px 8px #970C91;
+  font-size: 30px;
+  transition: 1s;
+}
+#ac:hover{
+  background-color: #Ed2de2;
+  box-shadow: inset 3px 3px 6px #A8A8A8,
+            inset -3px -3px 6px #D8D8D8
+}
+@media(max-width:768px){
+  .calcul{
+  width:auto;
+    height:50%;
+  }
+  .cal{
+  height: 30px;
+  width:50px;
+  margin:3px;
+  margin-left: 5px;
+  }
+  #ac{
+  height: 30px;
+  width:50px;
+  margin:3px;
+  margin-left: 5px;
+  }
+  #ce{
+  height: 30px;
+  width:50px;
+  margin:3px;
+  margin-left: 5px;
+     
+  }
+  #evalu{
+    height:30px;
+  width:45%;
+  margin-left:5px;
+  }
+  .enter #ecran{
+  height: 45px;
+  width:auto;
+    font-size:15px;
+    margin-left: 15px 
+}

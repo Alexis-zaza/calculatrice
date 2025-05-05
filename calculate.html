@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Calculate</title>
+  <link rel="stylesheet" href="design.css">
+</head>
+<body>
+  <div class="calcul">
+    <div class="enter">
+      <input type="text" id="ecran" placeholder="0"/>
+    </div>
+    <div class="table">
+      <div class="calc">
+        <button onclick="effaceur()" id="ce">CE</button>
+         <button class="cal">/</button>
+         <button class="cal">*</button>
+         <button onclick="ecran.value=''" id="ac">AC</button>
+         
+      </div>
+       <div class="calc">
+        <button class="cal">7</button>
+         <button class="cal">8</button>
+         <button class="cal">9</button>
+         <button class="cal">-</button>
+         
+      </div>
+       <div class="calc">
+        <button class="cal">4</button>
+         <button class="cal">5</button>
+         <button class="cal">6</button>
+         <button class="cal">+</button>
+         
+      </div>
+      
+     <div class="calc">
+        <button class="cal">1</button>
+         <button class="cal">2</button>
+         <button class="cal">3</button>
+        <button class="cal">%</button>
+      </div>
+       <div class="calc">
+         <button class="cal">0</button>
+         <button class="cal">.</button>
+         <button id="evalu" onclick="ecran.value=eval(ecran.value)">=</button>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+ var ecran=document.querySelector('#ecran');
+ var cal=document.querySelectorAll('.cal');
+ for(item of cal) 
+{
+   item.addEventListener('click',(e)=>{
+     caltext=e.target.innerText;
+     if(caltext=='x'){
+       caltext=='*';
+     }
+     if(caltext==':'){
+       caltext='/';
+     }
+     ecran.value+=caltext;
+   });
+ }
+function effaceur(){
+  ecran.value=ecran.value.substr(0,ecran.value.length-1);
+}
+</script>
+</html>
